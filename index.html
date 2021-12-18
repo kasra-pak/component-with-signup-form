@@ -9,26 +9,24 @@
   <title>Intro component with sign up form</title>
 </head>
 <body>
-  <div class="hero">
-    <div class="intro">
-      <header class="header">
-        <h1 class="header__title">Learn to code by watching others</h1>
-        <p class="header__subtitle">
-          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-          but understanding how developers think is invaluable.
-        </p>
-      </header>
-      <div class="signup">
-        <div class="signup__info">Try it free 7 days then $20/mo. thereafter</div>
-        <form class="signup__form">
-          <input type="text" name="firstname" placeholder="First Name">
-          <input type="text" name="lastname" placeholder="Last Name">
-          <input type="email" name="email-address" placeholder="Email Address">
-          <input type="password" name="password" placeholder="Password">
-          <input type="submit" value="Claim your free trial">
-        </form>
-        <p class="signup__terms">By clicking the button, you are agreeing to our Terms and Services</p>
-      </div>
+  <div class="intro">
+    <header class="header">
+      <h1 class="header__title">Learn to code by watching others</h1>
+      <p class="header__subtitle">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </header>
+    <div class="signup">
+      <div class="signup__info">Try it free 7 days then $20/mo. thereafter</div>
+      <form class="signup__form">
+        <input type="text" name="firstname" placeholder="First Name" class="input">
+        <input type="text" name="lastname" placeholder="Last Name" class="input">
+        <input type="email" name="email-address" placeholder="Email Address" class="input">
+        <input type="password" name="password" placeholder="Password" class="input">
+        <input type="submit" value="Claim your free trial" class="submit-btn">
+        <p class="signup__terms">By clicking the button, you are agreeing to our <span class="bold red">Terms and Services</span></p>
+      </form>
     </div>
   </div>
 </body>
