@@ -19,15 +19,20 @@
     </header>
     <div class="signup">
       <div class="signup__info"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</div>
-      <form class="signup__form">
+      <form name="signupForm" onsubmit="" class="signup__form">
         <input type="text" name="firstname" placeholder="First Name" class="field">
+        <label for="firstname">First Name cannot be empty</label>
         <input type="text" name="lastname" placeholder="Last Name" class="field">
-        <input type="email" name="email-address" placeholder="Email Address" class="field">
+        <label for="lastname">Last Name cannot be empty</label>
+        <input type="email" name="email" placeholder="Email Address" class="field email">
+        <label for="firstname">Looks like this is not an email</label>
         <input type="password" name="password" placeholder="Password" class="field">
-        <input type="submit" value="Claim your free trial" class="submit-btn">
+        <label for="firstname">Password cannot be empty</label>
+        <input type="submit" value="claim your free trial" class="submit-btn">
         <p class="signup__terms">By clicking the button, you are agreeing to our <span class="bold red">Terms and Services</span></p>
       </form>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -79,6 +79,43 @@ body {
   border: 1px solid lightgray;
 }
 
+.empty {
+  border: 2px solid var(--Red);  
+}
+
+.field.empty {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.field + label {
+  display: none;
+  color: var(--Red);
+  font-weight: 500;
+  font-size: 0.65rem;
+  text-align: right;
+  font-style: italic;
+  padding: 0.35em 0.3em 1.8em 0;
+}
+
+.field.empty + label {
+  display: block;
+}
+
+.field.empty {
+  background: url('./images/icon-error.svg') no-repeat;
+  background-position: bottom 50% right 25px;
+}
+
+.field.empty::placeholder {
+  opacity: 0;
+}
+
+.field.empty.email::placeholder {
+  color: var(--Red);
+  opacity: 1;
+}
+
 .signup input,
 .field::placeholder {
   width: 100%;
@@ -94,6 +131,10 @@ body {
 
 .field:focus {
   border: 1px solid var(--Blue);
+}
+
+.field.empty:focus {
+  border: 2px solid var(--Red)
 }
 
 .signup input:focus {
@@ -118,7 +159,7 @@ body {
   margin: 0;
   color: var(--Grayish-Blue);
   font-size: 0.7rem;
-  padding: 0 1em
+  padding: 0 1em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -160,5 +201,4 @@ body {
     margin-bottom: 1.25rem;
     padding: 1.1em 2em 1em;
   }
-
 }
